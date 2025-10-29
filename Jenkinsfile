@@ -10,7 +10,7 @@ spec:
   serviceAccountName: jenkins
   restartPolicy: Never
   nodeSelector:
-    role: cicd
+    role: app
   tolerations:
     - key: "dedicated"
       operator: "Equal"
