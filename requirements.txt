@@ -1,0 +1,8 @@
+Flask~=3.1.1
+requests~=2.32.4
+gunicorn
+pylint
+pytest~=8.4.1
+selenium~=4.34.2
+prometheus-client~=0.20.0
+flask_cors
