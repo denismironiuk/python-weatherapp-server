@@ -296,7 +296,7 @@ EOF
         stage('Update Helm Manifests') {
             steps {
                 withCredentials([usernamePassword(
-                    credentialsId: 'glpat-5t6gRYF9xtVedcBYEMQr',
+                    credentialsId: 'glpat',
                     usernameVariable: 'GIT_USER',
                     passwordVariable: 'GIT_PASS'
                 )]) {
