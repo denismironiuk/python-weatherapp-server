@@ -5,13 +5,18 @@ services:
     build:
       context: .
     container_name: flask_app
-    command: gunicorn application:app --workers=3 --bind 0.0.0.0:5000
+    # Подключаем файл .env, который ты добавил в .gitignore
+    env_file:
+      - .env
     restart: always
     ports:
       - "5000:5000"
+    # Настройки ниже уже есть в Dockerfile, 
+    # но в compose их удобно держать для быстрого изменения без пересборки образа
+    command: gunicorn application:app --workers=3 --bind 0.0.0.0:5000
     healthcheck:
       test: ["CMD", "curl", "-f", "http://127.0.0.1:5000/health"]
       interval: 30s
       timeout: 5s
       retries: 3
-      start_period: 10s
+      start_period: 20s

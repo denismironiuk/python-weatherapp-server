@@ -1,0 +1,32 @@
+# Секреты (ОБЯЗАТЕЛЬНО)
+.env
+
+# Виртуальное окружение (уже устанавливается внутри Docker)
+venv/
+.venv/
+
+# Кэш Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Гит и IDE
+.git
+.gitignore
+.vscode/
+.idea/
+
+# Тесты (обычно не нужны в продакшн-образе)
+tests/
+test1/
+
+# Инфраструктурные файлы
+Dockerfile
+docker-compose.yml
+Jenkinsfile
+nginx/
+templates.zip
+
+# Логи
+*.log

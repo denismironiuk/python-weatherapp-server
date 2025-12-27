@@ -1,0 +1,38 @@
+# --- Секреты и Конфигурация (КРИТИЧЕСКИ ВАЖНО) ---
+.env
+*.env
+auth.json
+secrets.txt
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# --- IDE (Visual Studio Code, PyCharm) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS (Системные файлы) ---
+.DS_Store
+Thumbs.db
+
+# --- Docker & Build (Локальные логи) ---
+*.log
+docker-compose.override.yml
